@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, GraduationCap } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,17 +15,6 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    company: '哈啰出行',
-    role: '高级数据开发工程师',
-    period: '2021.07 - 2025.07',
-    location: '上海',
-    description: [
-      '从 0 到 1 主导数据应用平台建设，落地数据看板、自助分析等全链路数据产品，服务公司内部多业务线数据消费场景',
-      '构建数据权限与数据质量治理体系，实现表级/字段级细粒度权限管控与自动化质量巡检',
-      '推动数据服务化与自助化转型，显著降低业务方取数门槛，提升数据需求响应效率与数据消费体验',
-    ],
-  },
-  {
     company: '兴趣岛',
     role: '数据中台开发工程师',
     period: '2025.07 - 至今',
@@ -36,7 +25,25 @@ const experiences: ExperienceItem[] = [
       '在企业微信 20万/小时 接口限流瓶颈下，完成 3亿+ 标签自动打标，支撑精细化用户运营',
     ],
   },
+  {
+    company: '哈啰出行',
+    role: '高级数据开发工程师',
+    period: '2021.07 - 2025.07',
+    location: '上海',
+    description: [
+      '从 0 到 1 主导数据应用平台建设，落地数据看板、自助分析等全链路数据产品，服务公司内部多业务线数据消费场景',
+      '构建数据权限与数据质量治理体系，实现表级/字段级细粒度权限管控与自动化质量巡检',
+      '推动数据服务化与自助化转型，显著降低业务方取数门槛，提升数据需求响应效率与数据消费体验',
+    ],
+  },
 ];
+
+const education = {
+  school: '黑龙江工程学院',
+  degree: '本科',
+  major: '信息管理与信息系统',
+  period: '2017.09 - 2021.06',
+};
 
 export default function Experience() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -120,6 +127,33 @@ export default function Experience() {
                 </div>
               </div>
             ))}
+
+            {/* Education */}
+            <div className="exp-item relative flex gap-6">
+              <div className="hidden md:flex flex-col items-center">
+                <div className="w-3 h-3 rounded-full bg-accent-warm border-4 border-bg-primary z-10 mt-2" />
+              </div>
+              <div className="flex-1 glass rounded-xl p-6 hover:ring-1 hover:ring-white/10 transition-all border-l-2 border-l-accent-warm/50">
+                <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <h3 className="text-lg font-semibold text-text-primary">
+                    {education.school}
+                  </h3>
+                  <span className="px-2 py-0.5 rounded-md text-xs font-medium bg-accent-warm/10 text-accent-warm">
+                    {education.degree}
+                  </span>
+                </div>
+                <div className="flex flex-wrap items-center gap-4 text-xs text-text-muted mb-3">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
+                    {education.period}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <GraduationCap className="w-3 h-3" />
+                    {education.major}
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

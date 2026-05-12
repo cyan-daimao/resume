@@ -87,7 +87,7 @@ export default function Hero() {
 
         <div className="hero-cta flex flex-wrap items-center justify-center gap-4 mb-8">
           <a
-            href="http://8.130.24.136:9102/"
+            href="https://cyan-daimao.github.io/cyan-daimao/"
             target="_blank"
             className="group px-6 py-3 bg-accent text-bg-primary font-medium rounded-lg hover:bg-accent/90 transition-colors flex items-center gap-2"
           >
@@ -129,8 +129,8 @@ export default function Hero() {
         <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto">
           {[
             { value: '5+', label: '年经验' },
-            { value: '10+', label: '模块' },
-            { value: '全栈', label: '独立开发' },
+            { value: '8', label: '开源仓库' },
+            { value: '6000万', label: '用户画像' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, Terminal } from 'lucide-react';
+import { Menu, X, Terminal, FileDown } from 'lucide-react';
 
 const navItems = [
   { label: '关于', href: '#about' },
@@ -58,6 +58,14 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
+          <a
+            href="/resume.pdf"
+            download
+            className="ml-2 px-4 py-2 text-sm text-accent border border-accent/30 rounded-lg hover:bg-accent/10 transition-colors flex items-center gap-1.5"
+          >
+            <FileDown className="w-4 h-4" />
+            下载简历
+          </a>
         </div>
 
         {/* Mobile Toggle */}

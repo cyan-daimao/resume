@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Mail, Phone, Code, Send } from 'lucide-react';
+import { FaGoogle } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,18 +15,18 @@ const contactLinks = [
     color: '#10b981',
   },
   {
-    icon: <Mail className="w-5 h-5" />,
-    label: '邮箱',
+    icon: <FaGoogle className="w-5 h-5" />,
+    label: 'Gmail',
     value: 'daimao2817@gmail.com',
     href: 'mailto:daimao2817@gmail.com',
-    color: '#38bdf8',
+    color: '#EA4335',
   },
   {
     icon: <Mail className="w-5 h-5" />,
-    label: '邮箱',
+    label: '163 邮箱',
     value: 'a1624000875@163.com',
     href: 'mailto:a1624000875@163.com',
-    color: '#60a5fa',
+    color: '#FC3F00',
   },
   {
     icon: <Code className="w-5 h-5" />,
