@@ -11,7 +11,6 @@ interface ExperienceItem {
   period: string;
   location: string;
   description: string[];
-  skills: string[];
 }
 
 const experiences: ExperienceItem[] = [
@@ -21,12 +20,10 @@ const experiences: ExperienceItem[] = [
     period: '2021.07 - 2025.07',
     location: '上海',
     description: [
-      '从 0 到 1 主导企业级数据中台建设，独立完成存算分离、元数据、指标、画像、查询、分析、看板等全链路模块',
-      '设计并实现数据权限、调度系统、数据血缘、数据质量等数据治理体系',
-      '基于 DDD 优化版代码设计，构建企业级 Maven 微服务项目，支撑日均亿级数据量',
-      '独立部署 CI/CD + K8s 流程，完成从 VPN 到 K8s 的服务器开发与运维',
+      '从 0 到 1 主导数据应用平台建设，落地数据看板、自助分析等全链路数据产品，服务公司内部多业务线数据消费场景',
+      '构建数据权限与数据质量治理体系，实现表级/字段级细粒度权限管控与自动化质量巡检',
+      '推动数据服务化与自助化转型，显著降低业务方取数门槛，提升数据需求响应效率与数据消费体验',
     ],
-    skills: ['Java', 'Spring Boot', 'DDD', 'Maven', 'Kafka', 'Flink', 'K8s', 'CI/CD'],
   },
   {
     company: '兴趣岛',
@@ -34,11 +31,10 @@ const experiences: ExperienceItem[] = [
     period: '2025.07 - 至今',
     location: '广州',
     description: [
-      '独立负责用户画像中台开发与维护，支撑 6000 万级用户的企业微信打标系统',
-      '独立完成画像标签 API 设计与开发，保障高并发场景下的服务稳定性',
-      '持续优化数据中台架构，推进数据血缘与质量监控体系建设',
+      '独立负责用户画像中台建设与维护，支撑 6000 万级用户的企业微信自动化标签体系',
+      '设计并开发高并发画像标签 API，保障千万级调用量下的服务稳定性与低延迟响应',
+      '在企业微信 20万/小时 接口限流瓶颈下，完成 3亿+ 标签自动打标，支撑精细化用户运营',
     ],
-    skills: ['Java', 'Spark', 'Hive', 'Airflow', '画像中台', '微服务'],
   },
 ];
 
@@ -121,16 +117,6 @@ export default function Experience() {
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-2">
-                    {exp.skills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-2 py-0.5 rounded-md text-xs font-mono border border-border text-text-muted"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
             ))}

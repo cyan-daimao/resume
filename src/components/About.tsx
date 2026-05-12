@@ -31,7 +31,7 @@ const skills = [
   {
     category: '后端架构',
     icon: <Code2 className="w-4 h-4" />,
-    items: ['Java', '微服务', 'DDD', 'Maven', 'Spring Boot', 'gRPC'],
+    items: ['Java', 'Go', '微服务', 'DDD', 'Spring Boot', 'gRPC'],
     color: '#38bdf8',
   },
   {
@@ -49,7 +49,7 @@ const skills = [
   {
     category: '数据工程',
     icon: <Cpu className="w-4 h-4" />,
-    items: ['Flink', 'Kafka', 'Spark', '数据仓库', 'ClickHouse'],
+    items: ['Flink', 'Kafka', 'Spark', 'Iceberg', 'StarRocks', 'RustFS'],
     color: '#8b5cf6',
   },
   {
@@ -125,7 +125,7 @@ export default function About() {
               VibeCoding 超级个体，5 年数据中台产品独立开发经验。具备从数据采集、存储、计算到应用的全链路独立开发能力，涵盖存算分离、元数据平台、指标平台、画像中台、查询平台、分析平台、看板平台、数据权限、调度系统、数据血缘、数据质量等核心模块。
             </p>
             <p className="text-text-secondary leading-relaxed">
-              精通 Java 与微服务架构设计，擅长 DDD 优化版代码设计，具备企业级 Maven 项目构建能力。熟悉 React + TypeScript 前端技术栈，拥有独立的全栈开发能力。
+              精通 Java 与微服务架构设计，独立设计 DDBD 代码架构设计(DDD优化版)，具备企业级 Maven 项目构建能力。熟悉 React + TypeScript 前端技术栈，拥有独立的全栈开发能力。
             </p>
             <p className="text-text-secondary leading-relaxed">
               具备企业级落地架构设计能力，拥有 CI/CD + K8s 独立部署经验，企业级测试服务从 0 到 1 建设能力，从 VPN 到 K8s 的完整服务器开发经验。多次从 0 到 1 完成企业级数据中台完整项目。

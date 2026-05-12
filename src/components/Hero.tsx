@@ -4,6 +4,7 @@ import gsap from 'gsap';
 
 const techStack = [
   'Java',
+  'Go',
   'TypeScript',
   'React',
   'Vue3',
@@ -16,7 +17,8 @@ const techStack = [
   'CI/CD',
   'Flink',
   'Kafka',
-  'ECharts',
+  'Iceberg',
+  'StarRocks',
 ];
 
 export default function Hero() {
