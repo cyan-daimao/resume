@@ -47,7 +47,7 @@ spec:
         }
     }
     parameters {
-        string(name: 'BRANCH', defaultValue: 'main', description: 'GIT 分支（首次运行后自动更新为可选列表）')
+        string(name: 'BRANCH', defaultValue: 'master', description: 'GIT 分支（首次运行后自动更新为可选列表）')
     }
     environment {
         APP_NAME = "${JOB_NAME}"
