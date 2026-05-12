@@ -111,9 +111,16 @@ export default function Projects() {
                 </a>
               </div>
 
-              <h3 className="text-base font-semibold text-text-primary mb-1.5 group-hover:text-accent transition-colors">
-                {project.title}
-              </h3>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <h3 className="text-base font-semibold text-text-primary mb-1.5 group-hover:text-accent transition-colors cursor-pointer">
+                  {project.title}
+                </h3>
+              </a>
               <p className="text-sm text-text-secondary leading-relaxed mb-4">
                 {project.desc}
               </p>
