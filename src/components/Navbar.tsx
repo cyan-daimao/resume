@@ -58,13 +58,14 @@ export default function Navbar() {
               {item.label}
             </button>
           ))}
-          <button
-            onClick={() => window.print()}
+          <a
+            href="/闫晨阳-数据开发.pdf"
+            download
             className="ml-2 px-4 py-2 text-sm text-accent border border-accent/30 rounded-lg hover:bg-accent/10 transition-colors flex items-center gap-1.5 cursor-pointer"
           >
             <FileDown className="w-4 h-4" />
             下载简历
-          </button>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
