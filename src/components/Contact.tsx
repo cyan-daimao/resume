@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Mail, Phone, Code, Send } from 'lucide-react';
+import { Mail, Phone,  Send } from 'lucide-react';
 import { FaGoogle, FaWeixin } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger);

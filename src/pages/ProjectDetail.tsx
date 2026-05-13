@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   ArrowLeft,
-  Database,
   BarChart3,
   Layers,
   Code2,
@@ -9,7 +8,6 @@ import {
   Workflow,
   Sparkles,
   Search,
-  Table2,
   Monitor,
   CheckCircle2,
   ExternalLink,
