@@ -1,4 +1,4 @@
-import { Database, Server, Shield, BarChart3, PieChart, Box } from 'lucide-react';
+import { Server, Shield, BarChart3, PieChart, Box } from 'lucide-react';
 import ArchitectureDiagram from './ArchitectureDiagram';
 
 interface ProjectItem {
@@ -20,15 +20,6 @@ const projects: ProjectItem[] = [
     github: 'https://github.com/cyan-daimao/cyan-arch',
     icon: <Box className="w-5 h-5" />,
     color: '#94a3b8',
-  },
-  {
-    id: 'dataman',
-    title: 'cyan-dataman',
-    desc: '数据采集 + 元数据平台。CDC 数据入湖（Debezium + Kafka + Flink），Gravitino + Iceberg 元数据治理。',
-    techs: ['Java', 'Flink', 'Kafka', 'Gravitino'],
-    github: 'https://github.com/cyan-daimao/cyan-dataman',
-    icon: <Database className="w-5 h-5" />,
-    color: '#10b981',
   },
   {
     id: 'datagateway',

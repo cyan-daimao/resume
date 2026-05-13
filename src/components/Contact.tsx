@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Mail, Phone, Code, Send } from 'lucide-react';
-import { FaGoogle } from 'react-icons/fa';
+import { FaGoogle, FaWeixin } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,11 +29,11 @@ const contactLinks = [
     color: '#FC3F00',
   },
   {
-    icon: <Code className="w-5 h-5" />,
-    label: 'GitHub',
-    value: 'github.com/cyan-daimao',
-    href: 'https://github.com/cyan-daimao',
-    color: '#a78bfa',
+    icon: <FaWeixin className="w-5 h-5" />,
+    label: '微信',
+    value: '17338200219',
+    href: '#',
+    color: '#07C160',
   },
 ];
 

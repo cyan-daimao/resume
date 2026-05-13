@@ -10,7 +10,7 @@ import {
   Code,
   ExternalLink,
 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+
 
 interface Layer {
   id: string;
@@ -117,7 +117,6 @@ const layers: Layer[] = [
 ];
 
 export default function ArchitectureDiagram() {
-  const navigate = useNavigate();
   const [activeLayer, setActiveLayer] = useState<string | null>(null);
 
   return (
@@ -231,13 +230,15 @@ export default function ArchitectureDiagram() {
 
       {/* Bottom CTA */}
       <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-        <button
-          onClick={() => navigate('/project/cyan-dataman')}
+        <a
+          href="http://8.130.24.136:9102"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-5 py-2.5 bg-accent/10 border border-accent/30 text-accent rounded-lg text-sm font-medium hover:bg-accent/20 transition-colors flex items-center gap-2 cursor-pointer"
         >
           <ExternalLink className="w-4 h-4" />
           查看项目详情
-        </button>
+        </a>
         <a
           href="https://github.com/cyan-daimao"
           target="_blank"
