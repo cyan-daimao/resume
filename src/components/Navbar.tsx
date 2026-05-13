@@ -59,7 +59,7 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="/闫晨阳-数据开发.pdf"
+            href="/简历_闫晨阳.pdf"
             download
             className="ml-2 px-4 py-2 text-sm text-accent border border-accent/30 rounded-lg hover:bg-accent/10 transition-colors flex items-center gap-1.5 cursor-pointer"
           >
